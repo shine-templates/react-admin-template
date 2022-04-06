@@ -18,5 +18,10 @@
     "type": "input",
     "name": "license",
     "message": "license?"
+  },
+  {
+    "type": "input",
+    "name": "git",
+    "message": "git address?"
   }
 ]
