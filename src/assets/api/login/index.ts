@@ -1,4 +1,4 @@
-import request from '@/assets/utils/request'
+import request from '@/utils/request'
 const prefix = '/shy/yanglao'
 type LoginType = {
   account: string

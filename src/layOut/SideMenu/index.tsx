@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom'
 import _ from 'lodash'
 import { RouteConfig } from '@/route'
 import SvgIcon from '@/components/SvgIcon'
-import usePermission from '@/assets/utils/permission'
+import usePermission from '@/utils/permission'
 import { handleOpenkeys } from '@/store/reducers/layoutSlice'
 
 const { SubMenu } = Menu

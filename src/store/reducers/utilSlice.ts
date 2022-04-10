@@ -2,8 +2,8 @@
 // 保存删除图片的id
 import { createSlice, PayloadAction, createAsyncThunk, AnyAction } from '@reduxjs/toolkit'
 import { myOrg } from '@/assets/api/login'
-import { formatSelect } from '@/assets/utils/helper'
-import type { FormatSelect } from '@/assets/utils/helper'
+import { formatSelect } from '@/utils/helper'
+import type { FormatSelect } from '@/utils/helper'
 
 export const getAsyncOrganizations = createAsyncThunk('/organization/myOrg', async () => {
   const response = await myOrg()

@@ -3,7 +3,7 @@ import { message } from 'antd'
 import omit from 'lodash/omit'
 import getHeaders from './distinguishHeader'
 import NProgress from 'nprogress'
-import conf from '../conf'
+import conf from '../assets/conf'
 import 'nprogress/nprogress.css'
 
 interface RequestConfig extends AxiosRequestConfig {

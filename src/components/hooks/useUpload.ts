@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { message, Modal, Upload } from 'antd'
 import { RcFile, UploadChangeParam, UploadFile } from 'antd/lib/upload/interface'
-import getHeaders from '@/assets/utils/distinguishHeader'
+import getHeaders from '@/utils/distinguishHeader'
 
 interface InitUploadData {
   initUrl?: FILEITEM.item[]

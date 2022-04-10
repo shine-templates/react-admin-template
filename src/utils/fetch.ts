@@ -1,6 +1,6 @@
 import axios, { AxiosRequestConfig } from 'axios'
 import getHeaders from './distinguishHeader'
-import conf from '../conf'
+import conf from '../assets/conf'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 

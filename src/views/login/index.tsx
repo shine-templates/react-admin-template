@@ -9,7 +9,6 @@ import { pick } from 'lodash'
 import ForgetPassword from './forgetPassword'
 import useModal from '@/components/hooks/useModal'
 import conf from '@/assets/conf'
-import systemLogo from '@/assets/images/zuo-img@2x.png'
 import './login.css'
 
 const storage = (key: string, value: any) => {
@@ -106,9 +105,7 @@ export default () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.systemLogo}>
-          <img src={systemLogo} />
-        </div>
+        <div className={styles.systemLogo}></div>
         <div className={styles.formContainer}>
           <div className={styles.formTitle}>
             <div className={styles.titleText}>{conf.title}</div>

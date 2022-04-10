@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Button } from 'antd'
-import usePermission from '@/assets/utils/permission'
+import usePermission from '@/utils/permission'
 import { SizeType } from './SizeContext'
 declare const ButtonTypes: ['default', 'primary', 'ghost', 'dashed', 'link', 'text']
 declare const HtmlTypes: ['button', 'submit', 'reset', undefined]

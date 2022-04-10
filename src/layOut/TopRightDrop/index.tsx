@@ -1,17 +1,17 @@
 import * as React from 'react'
-import { Dropdown, Menu, Modal, message, Avatar } from 'antd'
+import { Dropdown, Menu, Modal, message, Avatar, Form, Input } from 'antd'
 import { Link, useHistory } from 'react-router-dom'
 import { HomeOutlined, LoginOutlined, EditOutlined, UserOutlined } from '@ant-design/icons'
 import styles from './index.module.scss'
-// import { useForm } from 'antd/lib/form/Form'
-// import { modifyPass } from '@/assets/api/login'
+import { useForm } from 'antd/lib/form/Form'
+import { modifyPass } from '@/assets/api/login'
 import conf from '@/assets/conf'
 
 export default () => {
-  // const [form] = useForm()
+  const [form] = useForm()
   const { replace } = useHistory()
   const userName = sessionStorage.getItem(conf.SESSION_KEY + 'userName')
-  // const [isVisible, setIsVisible] = React.useState<boolean>(false)
+  const [isVisible, setIsVisible] = React.useState<boolean>(false)
 
   const handleLogOut = () => {
     Modal.confirm({
@@ -37,45 +37,45 @@ export default () => {
     })
   }
 
-  // const handleOk = () => {
-  //   form.validateFields().then(values => {
-  //     modifyPass(values)
-  //       .then(() => {
-  //         message.success('修改密码成功,请重新登录')
-  //         setIsVisible(false)
-  //         replace('/login')
-  //       })
-  //       .catch(err => message.error(err.msg))
-  //   })
-  // }
+  const handleOk = () => {
+    form.validateFields().then(values => {
+      modifyPass(values)
+        .then(() => {
+          message.success('修改密码成功,请重新登录')
+          setIsVisible(false)
+          replace('/login')
+        })
+        .catch(err => message.error(err.msg))
+    })
+  }
 
-  // const handleCancel = () => {
-  //   setIsVisible(false)
-  //   form.resetFields()
-  // }
+  const handleCancel = () => {
+    setIsVisible(false)
+    form.resetFields()
+  }
 
-  // const ChangePasswordModal = () => {
-  //   return (
-  //     <Modal
-  //       title="修改密码"
-  //       visible={isVisible}
-  //       onOk={handleOk}
-  //       onCancel={handleCancel}
-  //       maskClosable={false}
-  //       destroyOnClose
-  //     >
-  //       <Form form={form} colon={false} labelCol={{ span: 4 }} wrapperCol={{ span: 18 }} autoComplete="off">
-  //         <Form.Item label="原始密码" name="oldPass" rules={[{ required: true, message: '请输入您的原始密码' }]}>
-  //           <Input placeholder="请输入您的原始密码" />
-  //         </Form.Item>
+  const ChangePasswordModal = () => {
+    return (
+      <Modal
+        title="修改密码"
+        visible={isVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        maskClosable={false}
+        destroyOnClose
+      >
+        <Form form={form} colon={false} labelCol={{ span: 4 }} wrapperCol={{ span: 18 }} autoComplete="off">
+          <Form.Item label="原始密码" name="oldPass" rules={[{ required: true, message: '请输入您的原始密码' }]}>
+            <Input placeholder="请输入您的原始密码" />
+          </Form.Item>
 
-  //         <Form.Item label="新密码" name="newPass" rules={[{ required: true, message: '请输入您的新密码' }]}>
-  //           <Input placeholder="请输入您的新密码"></Input>
-  //         </Form.Item>
-  //       </Form>
-  //     </Modal>
-  //   )
-  // }
+          <Form.Item label="新密码" name="newPass" rules={[{ required: true, message: '请输入您的新密码' }]}>
+            <Input placeholder="请输入您的新密码"></Input>
+          </Form.Item>
+        </Form>
+      </Modal>
+    )
+  }
 
   const renderRoleDrop = () => {
     const menu = (
@@ -119,7 +119,7 @@ export default () => {
       />
 
       {renderRoleDrop()}
-      {/* {ChangePasswordModal()} */}
+      {ChangePasswordModal()}
     </div>
   )
 }
