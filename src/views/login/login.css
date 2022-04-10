@@ -1,0 +1,21 @@
+.input_style {
+  width: 406px;
+  height: 57px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: none !important;
+}
+
+#normal_login_account {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#normal_login_password {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+input:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,23 @@
+.detailTitle {
+  // width: 100px;
+  height: 16px;
+  font-size: 16px;
+  font-family: 'PingFang SC';
+  font-weight: 500;
+  color: #404959;
+  // margin-bottom: 25px;
+  margin-left: 13px;
+}
+.detailTitle::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 4px;
+  height: 16px;
+  background: #1d79eb;
+}
+.container {
+  position: relative;
+  margin-bottom: 25px;
+}

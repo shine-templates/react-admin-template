@@ -1,13 +1,99 @@
+@import '~antd/dist/antd.css';
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 表单宽度 */
+.i_w {
+  width: 286px;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 20;
+  cursor: pointer;
+  height: 150px;
+  width: 100px;
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.back1 {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  height: 164px;
+  width: 323px;
+  padding-top: 40px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.skill {
+  width: 200px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/* 搜索表单宽度 */
+.searchFormItemWidth {
+  width: 200px !important;
+}
+
+.ant-table-body {
+  overflow-y: auto !important;
+  max-height: 300px !important;
 }
