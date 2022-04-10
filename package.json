@@ -1,7 +1,7 @@
 {
   "name": "react-template",
   "version": "0.1.0",
-  "private": true,
+  "private": "<%=private%>",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -9,7 +9,9 @@
     "lint:format": "prettier --write ./src",
     "lint-eslint": "eslint --fix ./src"
   },
-  "description": "项目名称",
+  "autor": "<%=author%>",
+  "description": "<%=description%>",
+  "license": "<%=license%>",
   "resolutions": {
     "//": "See https://github.com/facebook/create-react-app/issues/11773",
     "react-error-overlay": "6.0.9"
