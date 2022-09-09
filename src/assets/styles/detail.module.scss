@@ -1,0 +1,83 @@
+.main {
+  img {
+    max-width: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 13px;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 33.33%;
+  margin-top: 25px;
+}
+
+.item50 {
+  width: 50%;
+  margin-top: 25px;
+}
+
+.longItem {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.selfItem {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.detailTitle {
+  width: 100px;
+  height: 16px;
+  font-size: 16px;
+  font-family: 'PingFang SC';
+  font-weight: 500;
+  color: #404959;
+  //   margin-bottom: 25px;
+  margin-left: 13px;
+}
+
+.detailTitle::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 4px;
+  height: 16px;
+  background: #1d79eb;
+}
+
+.leftDesc {
+  width: 61px;
+  height: 14px;
+  font-size: 14px;
+  font-family: 'PingFang SC';
+  font-weight: 400;
+  color: #999999;
+}
+
+.rightValue {
+  width: 61px;
+  height: 14px;
+  font-size: 14px;
+  font-family: 'PingFang SC';
+  font-weight: 400;
+  color: #333333;
+}
+
+.rightLongValue {
+  font-size: 14px;
+  font-family: 'PingFang SC';
+  font-weight: 400;
+  color: #333333;
+}

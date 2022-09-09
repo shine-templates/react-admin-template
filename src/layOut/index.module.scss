@@ -1,0 +1,40 @@
+.wrapperContainer {
+  height: 100vh;
+  .IconWrapper {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding-left: 24px;
+    overflow: hidden;
+    line-height: 64px;
+    background: #001529;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #fff;
+  }
+}
+
+.span {
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.contentWrap {
+  box-sizing: border-box;
+  padding-left: 20px !important;
+  padding: 24px;
+  height: 100vh;
+  position: relative;
+  overflow-y: auto;
+}
