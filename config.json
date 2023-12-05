@@ -6,11 +6,6 @@
   },
   {
     "type": "input",
-    "name": "name",
-    "message": "project name?"
-  },
-  {
-    "type": "input",
     "name": "author",
     "message": "author?"
   },
@@ -20,13 +15,41 @@
     "message": "description?"
   },
   {
-    "type": "input",
+    "type": "list",
     "name": "license",
-    "message": "license?"
-  },
-  {
-    "type": "input",
-    "name": "git",
-    "message": "git address?"
+    "message": "please select license",
+    "default": "MIT",
+    "choices": [
+      {
+        "name": "GPL",
+        "value": "GPL",
+        "long": "General Public License"
+      },
+      {
+        "name": "BSD",
+        "value": "BSD",
+        "long": "Berkeley Software Distribution"
+      },
+      {
+        "name": "MIT",
+        "value": "MIT",
+        "long": "Massachusetts Institute of Technology"
+      },
+      {
+        "name": "Apache",
+        "value": "Apache",
+        "long": "Apache License Version 2.0"
+      },
+      {
+        "name": "LGPL",
+        "value": "LGPL",
+        "long": "Lesser General Public License"
+      },
+      {
+        "name": "MPL",
+        "value": "MPL",
+        "long": "Mozilla Public License"
+      }
+    ]
   }
 ]
