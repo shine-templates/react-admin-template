@@ -22,33 +22,33 @@
     "choices": [
       {
         "name": "GPL",
-        "value": "General Public License",
-        "short": "GPL"
+        "value": "GPL",
+        "long": "General Public License"
       },
       {
         "name": "BSD",
-        "value": "Berkeley Software Distribution",
-        "short": "BSD"
+        "value": "BSD",
+        "long": "Berkeley Software Distribution"
       },
       {
         "name": "MIT",
-        "value": "Massachusetts Institute of Technology",
-        "short": "MIT"
+        "value": "MIT",
+        "long": "Massachusetts Institute of Technology"
       },
       {
         "name": "Apache",
-        "value": "Apache License Version 2.0",
-        "short": "Apache"
+        "value": "Apache",
+        "long": "Apache License Version 2.0"
       },
       {
         "name": "LGPL",
-        "value": "Lesser General Public License",
-        "short": "LGPL"
+        "value": "LGPL",
+        "long": "Lesser General Public License"
       },
       {
         "name": "MPL",
-        "value": "Mozilla Public License",
-        "short": "MPL"
+        "value": "MPL",
+        "long": "Mozilla Public License"
       }
     ]
   }
