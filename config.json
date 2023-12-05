@@ -15,8 +15,41 @@
     "message": "description?"
   },
   {
-    "type": "input",
+    "type": "list",
     "name": "license",
-    "message": "license?"
+    "message": "please select license",
+    "default": "MIT",
+    "choices": [
+      {
+        "name": "GPL",
+        "value": "General Public License",
+        "short": "GPL"
+      },
+      {
+        "name": "BSD",
+        "value": "Berkeley Software Distribution",
+        "short": "BSD"
+      },
+      {
+        "name": "MIT",
+        "value": "Massachusetts Institute of Technology",
+        "short": "MIT"
+      },
+      {
+        "name": "Apache",
+        "value": "Apache License Version 2.0",
+        "short": "Apache"
+      },
+      {
+        "name": "LGPL",
+        "value": "Lesser General Public License",
+        "short": "LGPL"
+      },
+      {
+        "name": "MPL",
+        "value": "Mozilla Public License",
+        "short": "MPL"
+      }
+    ]
   }
 ]
